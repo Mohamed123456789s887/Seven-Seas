@@ -11,116 +11,62 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-
-background-image:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600");
-
-background-size:cover;
-background-position:center;
 height:100vh;
+background:url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600") center center/cover no-repeat;
 display:flex;
 justify-content:center;
 align-items:center;
+position:relative;
+overflow:hidden;
 }
 
-.card{
+body::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.60);
+}
 
-width:90%;
-max-width:450px;
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(10px);
-
-border-radius:25px;
-
-padding:35px;
-
+.container{
+position:relative;
+z-index:10;
+width:92%;
+max-width:460px;
 text-align:center;
-
 color:white;
-
-box-shadow:0 0 25px rgba(0,0,0,.4);
-
 }
 
 .logo{
+width:220px;
+margin:auto;
+display:block;
+margin-bottom:20px;
+}
 
-font-size:34px;
-
+.welcome{
+font-size:62px;
+font-family:Georgia,serif;
+font-weight:bold;
 margin-bottom:10px;
-
 }
 
-.hotel{
-
-font-size:28px;
-
-font-weight:bold;
-
-color:#00d4c8;
-
-margin-bottom:8px;
-
-}
-
-.sub{
-
-font-size:18px;
-
-margin-bottom:30px;
-
-}
-
-.button{
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-decoration:none;
-
-background:#00b8c8;
-
-color:white;
-
-padding:18px;
-
-margin:14px 0;
-
-border-radius:15px;
-
+.choose{
 font-size:22px;
-
-font-weight:bold;
-
-transition:.3s;
-
+letter-spacing:2px;
+margin-bottom:5px;
 }
 
-.button:hover{
-
-background:#0098aa;
-
-transform:scale(1.04);
-
-}
-
-.footer{
-
-margin-top:25px;
-
-font-size:14px;
-
-color:#ddd;
-
+.ar{
+font-size:28px;
+color:#00d7d7;
+margin-bottom:35px;
 }
 
 </style>
@@ -129,52 +75,54 @@ color:#ddd;
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<div class="logo">🌊</div>
+<img src="https://i.imgur.com/uR7M8wK.png" class="logo">
 
-<div class="hotel">
-
-SEVEN SEAS<br>
-
-JOLIE BAY
-
+<div class="welcome">
+WELCOME
 </div>
 
-<div class="sub">
-
-Choose Your Language
-
+<div class="choose">
+CHOOSE YOUR LANGUAGE
 </div>
 
-<a class="button" href="https://drive.google.com/file/d/1grBeP_nVQmDe-2Yg1lHycqgPlBuQ9maR/view?usp=drivesdk" target="_blank">
-
-🇸🇦 AR | العربية
-
+<div class="ar">
+اختر لغتك
+</div>
+<a class="btn" href="https://drive.google.com/file/d/1grBeP_nVQmDe-2Yg1lHycqgPlBuQ9maR/view?usp=drivesdk" target="_blank">
+<span class="flag">🇸🇦</span>
+<span class="text">العربية</span>
+<span class="arrow">›</span>
 </a>
 
-<a class="button" href="https://drive.google.com/file/d/1V1LCGLpbrWQoFWFk3sooRvrm0NJH_91C/view?usp=drivesdk" target="_blank">
-
-🇬🇧 EN | English
-
+<a class="btn" href="https://drive.google.com/file/d/1V1LCGLpbrWQoFWFk3sooRvrm0NJH_91C/view?usp=drivesdk" target="_blank">
+<span class="flag">🇬🇧</span>
+<span class="text">English</span>
+<span class="arrow">›</span>
 </a>
 
-<a class="button" href="https://drive.google.com/file/d/1ricTxqwGUGE4hC3bKzJndOmNAdPR6ply/view?usp=drivesdk" target="_blank">
-
-🇩🇪 DE | Deutsch
-
+<a class="btn" href="https://drive.google.com/file/d/1ricTxqwGUGE4hC3bKzJndOmNAdPR6ply/view?usp=drivesdk" target="_blank">
+<span class="flag">🇩🇪</span>
+<span class="text">Deutsch</span>
+<span class="arrow">›</span>
 </a>
 
-<a class="button" href="https://drive.google.com/file/d/1ZlRGgXnhWlFnFhw4LAHLXtwY0PQfrGG8/view?usp=drivesdk" target="_blank">
-
-🇷🇺 RU | Русский
-
+<a class="btn" href="https://drive.google.com/file/d/1ZlRGgXnhWlFnFhw4LAHLXtwY0PQfrGG8/view?usp=drivesdk" target="_blank">
+<span class="flag">🇷🇺</span>
+<span class="text">Русский</span>
+<span class="arrow">›</span>
 </a>
+<div style="margin-top:40px;color:#00d7d7;font-size:26px;">
+🐚
+</div>
 
-<div class="footer">
+<div style="color:white;font-size:24px;margin-top:10px;">
+ENJOY YOUR STAY
+</div>
 
-Welcome to Seven Seas Jolie Bay ❤️
-
+<div style="color:#00d7d7;font-size:18px;margin-top:8px;">
+نتمنى لك إقامة سعيدة
 </div>
 
 </div>
