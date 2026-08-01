@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seven Seas Jolie Bay</title>
 
-<link href="https://googleapis.com" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,111 +17,174 @@ font-family:'Cairo',sans-serif;
 }
 
 body{
-background: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-            url("bg-new.png.jpeg");
+
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1800");
+
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
-background-repeat: no-repeat;
 
 display:flex;
 justify-content:center;
 align-items:center;
 
 min-height:100vh;
+
 padding:20px;
+
 }
 
 .card{
+
 width:100%;
 max-width:470px;
+
 border:2px solid rgba(0,212,212,.5);
+
 border-radius:30px;
-background: #0d0d0d; 
+
+background:rgba(0,0,0,.35);
+
+backdrop-filter:blur(12px);
+
 padding:30px;
+
 text-align:center;
+
 color:white;
+
 }
 
 .logo{
+
 width:230px;
+
 display:block;
+
 margin:auto;
+
 margin-bottom:25px;
-border-radius: 10px;
+
 }
   
 .welcome {
     font-family: 'Cinzel', serif;
-    font-size: clamp(32px, 10vw, 68px);
+    font-size: 10vw; /* حجم مرن يتغير حسب مقاس الشاشة */
+    max-font-size: 68px; /* يمنع الخط من أن يصبح ضخماً على الشاشات الكبيرة */
     line-height: 1.2;
-    text-align: center;
-    width: 100%;
+    text-align: center; /* لتوسيط النص في منتصف الصفحة تماماً */
+    width: 100%; /* لضمان أخذ العرض الكامل للمحاذاة */
     margin-bottom: 20px;
 }
 
 .choose{
+
 font-size:18px;
+
 letter-spacing:3px;
+
 }
 
 .ar{
+
 font-size:32px;
+
 color:#00d4d4;
+
 margin-bottom:35px;
+
 font-weight:bold;
+
 }
 
 .lang{
+
 display:flex;
+
 align-items:center;
+
 justify-content:space-between;
+
 background:#161616;
+
 border:2px solid #00d4d4;
+
 border-radius:25px;
+
 padding:18px 20px;
+
 margin:18px 0;
+
 text-decoration:none;
+
 color:white;
+
 transition:.3s;
+
 }
 
 .lang:hover{
+
 transform:scale(1.03);
+
 background:#202020;
+
 }
 
 .flag{
+
 font-size:46px;
+
 }
 
 .name{
+
 flex:1;
+
 font-size:26px;
+
 font-weight:bold;
+
 text-align:left;
+
 margin-left:20px;
+
 }
 
 .arrow{
+
 font-size:42px;
+
 color:#00d4d4;
+
 }
 
 .footer{
+
 margin-top:35px;
+
 font-size:28px;
+
 color:#00d4d4;
+
 }
 
 .footer2{
+
 font-size:24px;
+
 margin-top:10px;
+
 }
 
 .footer3{
+
 font-size:18px;
+
 color:#00d4d4;
+
 }
 
 </style>
@@ -132,40 +195,37 @@ color:#00d4d4;
 
 <div class="card">
 
-<img class="logo" src="logo-new.png.jpeg">
+<img class="logo" src="https://i.imgur.com/uR7M8wK.png">
 
 <div class="welcome">WELCOME</div>
 
 <div class="choose">CHOOSE YOUR LANGUAGE</div>
 
 <div class="ar">اختر لغتك</div>
-
-<!-- تم تعديل مسارات الأزرار لتقرأ الملفات مباشرة من جيت هب -->
-<a class="lang" href="menu-ar.pdf" target="_blank">
+  <a class="lang" href="https://drive.google.com/file/d/1grBeP_nVQmDe-2Yg1lHycqgPlBuQ9maR/view?usp=drivesdk" target="_blank">
 <div class="flag">🇸🇦</div>
 <div class="name">العربية</div>
 <div class="arrow">❯</div>
 </a>
 
-<a class="lang" href="menu-en.pdf" target="_blank">
+<a class="lang" href="https://drive.google.com/file/d/1V1LCGLpbrWQoFWFk3sooRvrm0NJH_91C/view?usp=drivesdk" target="_blank">
 <div class="flag">🇬🇧</div>
 <div class="name">English</div>
 <div class="arrow">❯</div>
 </a>
 
-<a class="lang" href="menu-de.pdf" target="_blank">
+<a class="lang" href="https://drive.google.com/file/d/1ricTxqwGUGE4hC3bKzJndOmNAdPR6ply/view?usp=drivesdk" target="_blank">
 <div class="flag">🇩🇪</div>
 <div class="name">Deutsch</div>
 <div class="arrow">❯</div>
 </a>
 
-<a class="lang" href="menu-ru.pdf" target="_blank">
+<a class="lang" href="https://drive.google.com/file/d/1ZlRGgXnhWlFnFhw4LAHLXtwY0PQfrGG8/view?usp=drivesdk" target="_blank">
 <div class="flag">🇷🇺</div>
 <div class="name">Русский</div>
 <div class="arrow">❯</div>
 </a>
-
-<div class="footer">🐚</div>
+  <div class="footer">🐚</div>
 
 <div class="footer2">
 ENJOY YOUR STAY
