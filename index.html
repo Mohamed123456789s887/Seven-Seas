@@ -6,98 +6,126 @@
 <title>Seven Seas Jolie Bay</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Poppins', Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-  /* استخدم الصورة المحلية project.jpeg كخلفية مع طبقة تظلّلية */
-  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("project.jpeg");
-  background-size:cover;
-  background-position:center;
-  background-attachment: fixed;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:30px;
+
+background-image:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600");
+
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .card{
-  width:100%;
-  max-width:460px;
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(8px) saturate(120%);
-  -webkit-backdrop-filter: blur(8px) saturate(120%);
-  border-radius:24px;
-  padding:36px 30px;
-  text-align:center;
-  color:#ffffff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
-  border: 1px solid rgba(255,255,255,0.08);
+
+width:90%;
+max-width:450px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+border-radius:25px;
+
+padding:35px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 0 25px rgba(0,0,0,.4);
+
 }
 
 .logo{
-  margin-bottom:12px;
+
+margin-bottom:10px;
+
 }
 
 .logo img{
-  max-width:92px;
-  height:auto;
-  display:inline-block;
-  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
+
+max-width:100px;
+height:auto;
+
 }
 
 .hotel{
-  font-size:28px;
-  font-weight:700;
-  color:#00e1d1;
-  margin-bottom:8px;
-  line-height:1.05;
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#00d4c8;
+
+margin-bottom:8px;
+
 }
 
 .sub{
-  font-size:16px;
-  margin-bottom:20px;
-  color: #e6f9f6;
+
+font-size:18px;
+
+margin-bottom:30px;
+
 }
 
 .button{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-decoration:none;
-  background: linear-gradient(90deg,#00b8c8,#00e1d1);
-  color: #002b2a;
-  padding:14px 16px;
-  margin:10px 0;
-  border-radius:14px;
-  font-size:18px;
-  font-weight:600;
-  transition: transform .18s ease, box-shadow .18s ease;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.28);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+background:#00b8c8;
+
+color:white;
+
+padding:18px;
+
+margin:14px 0;
+
+border-radius:15px;
+
+font-size:22px;
+
+font-weight:bold;
+
+transition:.3s;
+
 }
 
 .button:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.36);
+
+background:#0098aa;
+
+transform:scale(1.04);
+
 }
 
 .footer{
-  margin-top:18px;
-  font-size:13px;
-  color:#dfeff0;
-}
 
-@media (max-width:420px){
-  .card{ padding:26px 18px; }
-  .hotel{ font-size:24px }
-  .button{ font-size:16px; padding:12px 10px }
+margin-top:25px;
+
+font-size:14px;
+
+color:#ddd;
+
 }
 
 </style>
@@ -108,36 +136,51 @@ body{
 
 <div class="card">
 
-  <div class="logo"><img src="logo.png" alt="Seven Seas Jolie Bay Logo"></div>
+<div class="logo"><img src="logo.png" alt="Seven Seas Jolie Bay Logo"></div>
 
-  <div class="hotel">
-    SEVEN SEAS<br>
-    JOLIE BAY
-  </div>
+<div class="hotel">
 
-  <div class="sub">
-    Choose Your Language
-  </div>
+SEVEN SEAS<br>
 
-  <a class="button" href="https://drive.google.com/file/d/1grBeP_nVQmDe-2Yg1lHycqgPlBuQ9maR/view?usp=drivesdk" target="_blank">
-    🇸🇦 AR | العربية
-  </a>
+JOLIE BAY
 
-  <a class="button" href="https://drive.google.com/file/d/1V1LCGLpbrWQoFWFk3sooRvrm0NJH_91C/view?usp=drivesdk" target="_blank">
-    🇬🇧 EN | English
-  </a>
+</div>
 
-  <a class="button" href="https://drive.google.com/file/d/1ricTxqwGUGE4hC3bKzJndOmNAdPR6ply/view?usp=drivesdk" target="_blank">
-    🇩🇪 DE | Deutsch
-  </a>
+<div class="sub">
 
-  <a class="button" href="https://drive.google.com/file/d/1ZlRGgXnhWlFnFhw4LAHLXtwY0PQfrGG8/view?usp=drivesdk" target="_blank">
-    🇷🇺 RU | Русский
-  </a>
+Choose Your Language
 
-  <div class="footer">
-    Welcome to Seven Seas Jolie Bay ❤️
-  </div>
+</div>
+
+<a class="button" href="https://drive.google.com/file/d/1grBeP_nVQmDe-2Yg1lHycqgPlBuQ9maR/view?usp=drivesdk" target="_blank">
+
+🇸🇦 AR | العربية
+
+</a>
+
+<a class="button" href="https://drive.google.com/file/d/1V1LCGLpbrWQoFWFk3sooRvrm0NJH_91C/view?usp=drivesdk" target="_blank">
+
+🇬🇧 EN | English
+
+</a>
+
+<a class="button" href="https://drive.google.com/file/d/1ricTxqwGUGE4hC3bKzJndOmNAdPR6ply/view?usp=drivesdk" target="_blank">
+
+🇩🇪 DE | Deutsch
+
+</a>
+
+<a class="button" href="https://drive.google.com/file/d/1ZlRGgXnhWlFnFhw4LAHLXtwY0PQfrGG8/view?usp=drivesdk" target="_blank">
+
+🇷🇺 RU | Русский
+
+</a>
+
+<div class="footer">
+
+Welcome to Seven Seas Jolie Bay ❤️
+
+</div>
 
 </div>
 
